@@ -1,0 +1,29 @@
+{
+    "data": {
+      "targets": [
+        {
+          "id": "DEFAULT",
+          "allowedTypes": ["DIMENSION", "METRIC"],
+          "min": 2,
+          "max": 2
+        }
+      ]
+    },
+    "config": {
+      "style": [],
+      "theme": []
+    },
+    "scripts": [
+      {
+        "extension": "js",
+        "path": "https://cdn.jsdelivr.net/npm/wordcloud@1.2.2/src/wordcloud2.js"
+      },
+      {
+        "extension": "js",
+        "path": "viz.js"
+      }
+    ],
+    "name": "Word Cloud Example",
+    "description": "Community Viz que muestra un word cloud con WordCloud2.js"
+  }
+  
