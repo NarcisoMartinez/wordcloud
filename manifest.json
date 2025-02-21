@@ -1,29 +1,28 @@
 {
-    "data": {
-      "targets": [
-        {
-          "id": "DEFAULT",
-          "allowedTypes": ["DIMENSION", "METRIC"],
-          "min": 2,
-          "max": 2
+    "name": "Word Cloud",
+    "organization": "Empresa XYZ",
+    "description": "Visualización de nube de palabras usando D3.js",
+    "logoUrl": "https://example.com/logo.png",
+    "organizationUrl": "https://example.com",
+    "supportUrl": "https://example.com/support",
+    "privacyPolicyUrl": "https://example.com/privacy",
+    "termsOfServiceUrl": "https://example.com/terms",
+    "packageUrl": "https://example.com/wordcloud",
+    "devMode": true,
+    "resources": {
+      "js": [
+        "https://storage.googleapis.com/wordcloud_ryd/d3.min.js"
+    ]
+    },
+    "components": [
+      {
+        "name": "Word Cloud",
+        "description": "Visualización de nube de palabras con D3.js",
+        "iconUrl": "https://example.com/icon.png",
+        "resource": {
+            "js": "gs://wordcloud_ryd/viz.js",
+            "config": "gs://wordcloud_ryd/config.json" }
         }
-      ]
-    },
-    "config": {
-      "style": [],
-      "theme": []
-    },
-    "scripts": [
-      {
-        "extension": "js",
-        "path": "https://cdn.jsdelivr.net/npm/wordcloud@1.2.2/src/wordcloud2.js"
-      },
-      {
-        "extension": "js",
-        "path": "viz.js"
-      }
-    ],
-    "name": "Word Cloud Example",
-    "description": "Community Viz que muestra un word cloud con WordCloud2.js"
-  }
+    ]
+}
   
